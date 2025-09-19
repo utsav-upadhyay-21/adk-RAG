@@ -1,6 +1,4 @@
-# Vertex AI RAG Agent with ADK
-
-This repository contains a Google Agent Development Kit (ADK) implementation of a Retrieval Augmented Generation (RAG) agent using Google Cloud Vertex AI.
+# RAG Agent with Google ADK and Vertex AI
 
 ## Overview
 
@@ -13,12 +11,6 @@ The Vertex AI RAG Agent allows you to:
 - Get detailed information about specific corpora
 - Delete corpora when they're no longer needed
 
-## Prerequisites
-
-- A Google Cloud account with billing enabled
-- A Google Cloud project with the Vertex AI API enabled
-- Appropriate access to create and manage Vertex AI resources
-- Python 3.9+ environment
 
 ## Setting Up Google Cloud Authentication
 
@@ -99,24 +91,11 @@ Removes corpora that are no longer needed:
 - Requires confirmation to prevent accidental deletion
 - Permanently removes the corpus and all associated files
 
-## Troubleshooting
-
-If you encounter issues:
-
-- **Authentication Problems**:
-  - Run `gcloud auth application-default login` again
-  - Check if your service account has the necessary permissions
-
-- **API Errors**:
-  - Ensure the Vertex AI API is enabled: `gcloud services enable aiplatform.googleapis.com`
-  - Verify your project has billing enabled
-
-- **Quota Issues**:
-  - Check your Google Cloud Console for any quota limitations
-  - Request quota increases if needed
-
-- **Missing Dependencies**:
-  - Ensure all requirements are installed: `pip install -r requirements.txt`
+## Note:
+Deprecated may not be included in requirements , you have to install it seperately.
+```bash
+   pip install deprecated
+   ```
 
 ## Additional Resources
 
